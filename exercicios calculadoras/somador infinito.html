@@ -1,0 +1,18 @@
+<script>
+
+    let i = "1"
+    let resultado = 0;
+    let n1;
+    
+        while (i != "0") {
+            i = prompt("entre com um numero para somar, ou digite '0' para sair.");
+            n1 = parseInt(i);
+            resultado = resultado + n1;
+            alert("o resultado até o momento é " + resultado);
+
+        }
+            /* possui um erro no fim ... ao inves de mostrar apenas o resultado e sair
+            ele mostra o icone NaN e depois sai... ver onde ta o bug.
+            Bug resolvido alterando a string fim pelo number 0.. ao concatenar string 
+            com number gerou o erro NaN.*/
+</script>
